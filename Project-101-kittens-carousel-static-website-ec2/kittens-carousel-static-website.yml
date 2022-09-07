@@ -37,13 +37,13 @@ Resources:
       Tags:
         - Key: Name
           Value: !Sub Web Server of ${AWS::StackName} Stack
-      UserData: 
+      UserData:
         Fn::Base64:
           !Sub |
             #! /bin/bash
             yum update -y
             yum install httpd -y
-            FOLDER="https://github.com/ukan10/my-projects/tree/main/Project-101-kittens-carousel-static-website-ec2f/static-web"
+            FOLDER="https://raw.githubusercontent.com/ukan10/my-projects/main/Project-101-kittens-carousel-static-website-ec2/static-web"
             cd /var/www/html
             wget $FOLDER/index.html
             wget $FOLDER/cat0.jpg
