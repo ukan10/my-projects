@@ -1,0 +1,19 @@
+sudo yum update -y   # Bu komutları localimizde veya ec2 üzerinde Flask ile mysql  projesi çalıştırmak için
+
+sudo pip3 install flask
+
+sudo pip3 install flask-mysql
+
+sudo pip3 install sqlalchemy
+
+sudo pip3 install Flask-SQLAlchemy
+
+sudo yum install git -y
+
+sudo git clone .............. # Buraya dosyaları kopyalacağımız github repomuzun adresini yazıyoruz.
+			      #	'https://github.com/ukan10/my-projects.git' 
+
+
+
+
+sudo python3 app-with-mysql.py # bu komutları ec2 içinde çalıştırıyoruz..
